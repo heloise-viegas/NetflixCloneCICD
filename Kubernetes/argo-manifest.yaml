@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/heloise-viegas/NetflixCloneCICD/new/main/Kubernetes
+    repoURL: https://github.com/heloise-viegas/NetflixCloneCICD.git
     targetRevision: HEAD
     path: Kubernetes
   destination:
