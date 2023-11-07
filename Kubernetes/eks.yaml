@@ -1,0 +1,19 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: netflix-cluster
+  region: us-east-1
+
+managedNodeGroups:
+  - name: netflix-cluster-ng
+    instanceType: t3.medium
+    desiredCapacity: 1
+    volumeSize: 20
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
+        externalDNS: true
+        certManager: true
+        
+
